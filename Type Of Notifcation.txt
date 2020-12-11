@@ -1,0 +1,88 @@
+///signle notification 
+
+{
+ "to" : "e0jvgQn4TyG99RdFt1NGNl:APA91bEy73SBqXtyaDhKHEDp41iew8gvt1EmCUuhVxCUbctNIgrJGbq-03wk3ErT3L5PmeMdGPW6atEBxHV33cdghfsx7mLrSASwc1ZQXrgtSi22AVcfScYt1AzPNmre0GB9VtB-oq1A
+",
+ "collapse_key" : "type_a",
+ "notification" : {
+     "body" : " Notification",
+     "title": "Title of Your Notification"
+ },
+ "data" : {
+     "body" : "Body of Your Notification in Data",
+     "title": "Title of Your Notification in Title",
+     "key_1" : "Value for key_1",
+     "key_2" : "Value for key_2"
+ }
+}
+
+
+
+//special notification
+{
+ "to": "/topics/special",
+ "collapse_key" : "type_a",
+ "notification" : {
+     "body" : " Notification",
+     "title": "Title of Your Notification"
+ },
+ "data" : {
+     "body" : "Body of Your Notification in Data",
+     "title": "Title of Your Notification in Title",
+     "key_1" : "Value for key_1",
+     "key_2" : "Value for key_2"
+ }
+}
+
+
+
+
+///global notification
+
+{
+   "to": "/topics/topicName",
+ "collapse_key" : "type_a",
+ "notification" : {
+     "body" : " Notification",
+     "title": "Title of Your Notification"
+ },
+ "data" : {
+     "body" : "Body of Your Notification in Data",
+     "title": "Title of Your Notification in Title",
+     "key_1" : "Value for key_1",
+     "key_2" : "Value for key_2"
+ }
+}
+
+
+
+{
+   "to": "/topics/topicName",
+ "collapse_key" : "type_a",
+ "notification" : {
+     "body" : " 11",
+     "title": "11",
+      "click_action":"OPEN_ACTIVITY_1"
+  
+ },
+ "data" : {
+     "body" : "Body of Your Notification in Data",
+     "title": "Title of Your Notification in Title",
+     "key_1" : "Value for key_1",
+     "key_2" : "openitem"
+    
+     
+ }
+}
+
+
+
+
+
+https://www.iditect.com/how-to/53942708.html
+
+
+
+
+
+
