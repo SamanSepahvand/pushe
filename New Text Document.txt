@@ -1,0 +1,46 @@
+
+declare @GroupId int =1;
+declare @UserId int =12;
+declare @isAdmin  int=(select top 1(UserId) from dbo.Participants where UserId=@UserId and admin=1);
+
+
+declare @IsGroupExist  int =(select  top 1(id) from dbo.Groups where Id=@GroupId);
+
+if(@IsGroupExist is not  null)
+	if(@isAdmin is not null)
+		begin
+			select DISTINCT p.GroupId, t.UserId,t.name  ,t.token 
+				from Participants p 
+					left join UserRole r
+						on r.RoleId=p.RoleId 
+					left  join TabletUser t
+						on t.UserId=r.UserId
+						or t.UserId=p.UserId 
+						or t.WearHouseId = p.WearHouseId
+				
+			where p.GroupId=@GroupId
+		end
+	else
+	begin
+       	print 'user  cant send message in geoup';
+	
+	end
+else
+		begin
+			print 'group doese not exist';
+			InsertGroup:
+		end
+
+
+
+
+
+
+
+
+/*
+ inner join TabletUser t
+on t.UserId=r.UserId
+where GroupId=1 */
+
+
